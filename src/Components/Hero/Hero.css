@@ -1,6 +1,10 @@
 .hero{
-    background: linear-gradient(#FFFFFF, #c9c9c9);
+    background: linear-gradient(180deg,#FFFFFF 0%, #c9c9c9 100%);
     display: flex;
+    @media only screen  and(max-width:600px){
+        
+        background: linear-gradient(180deg, #FFFFFF 0%, #c9c9c9 100%);
+    }
 }
 .hero-left{
     padding-top: 5%;
@@ -18,11 +22,17 @@
     font-size: 22px;
     font-weight: 500;
     color: #333333;
+    @media only screen and(max-width:600px){
+        font-size: 10px;
+        
+    }
+    
 }
 .hero-hand-icon{
     display: flex;
     align-items: center;
     gap: 15px;
+    
 }
 .hero-hand-icon p{
     font-size: 60px;
@@ -34,7 +44,7 @@
     line-height: 1.5;
 }
 .hero-hand-icon img{
-    width: 70px;
+    width: 40px;
 }
 .hero-latest-btn{
     display: flex;
@@ -63,3 +73,4 @@
     0% {transform: translateX(50%); opacity: 0;}
     50% {transform: translateX(0); opacity: 5;}
 }
+

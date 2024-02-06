@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="nav-logo">
             <Link to='/' style={{textDecoration: 'none'}}><p>SHOPPERS ZONE</p></Link>
         </div>
-        <ul className='nav-menu'>
+        <ul className={menu ? 'nav-menu active':'nav-menu'}>
             <li className={menu === "shop" ? "active" : "nu"} onClick={() => { setMenu("shop") }}><Link style={{textDecoration: 'none', color: 'black'}} to='/'>Shop</Link></li>
             <li className={menu === "men" ? "active" : "nu"} onClick={() => { setMenu("men") }}><Link style={{textDecoration: 'none', color: 'black'}} to='/men'>Men</Link></li>
             <li className={menu === "women" ? "active" : "nu"} onClick={() => { setMenu("women") }}><Link style={{textDecoration: 'none', color: 'black'}} to='/women'>Women</Link></li>
