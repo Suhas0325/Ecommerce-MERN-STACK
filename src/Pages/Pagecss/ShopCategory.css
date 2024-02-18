@@ -1,0 +1,35 @@
+.head{
+    background: linear-gradient(to right, #b9b9b9, #ffffff);
+    height: 350px;
+    margin: 50px 60px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.head h1{
+    font-size: 50px;
+    margin-left: 80px;
+    padding-top: 80px;
+}
+
+.head button{
+     width: 170px;
+     height: 50px;
+     border-radius: 30px;
+     background-color: #333333;
+     color: white;
+     border: none;
+     margin-left: 80px;
+
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+.banner-image img{
+    height: 350px;
+    margin-left: 500px;
+    
+    
+}

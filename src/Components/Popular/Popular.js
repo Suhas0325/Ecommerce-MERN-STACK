@@ -3,13 +3,13 @@ import './Popular.css'
 import data_product from '../Assets/data'
 import Item from '../Item/Item'
 
-const Popular = () => {
+const Popular = (props) => {
   return (
     <div className='popular'>
-        <h1>POPULAR IN MEN</h1>
+        <h1>POPULAR IN {props.type.toUpperCase()}</h1>
         <div className="popular-item">
             {data_product.map((item,i)=>{
-                return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}/>
+                return <Item key={i}  id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}/>
             })}
         </div>
       
